@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 235 19% 35%;
+    --card: 0 0% 100%;
+    --card-foreground: 235 19% 35%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 235 19% 35%;
+    --primary: 220 98% 61%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 98%;
+    --secondary-foreground: 235 19% 35%;
+    --muted: 236 9% 61%;
+    --muted-foreground: 236 9% 61%;
+    --accent: 220 98% 61%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 233 11% 84%;
+    --input: 233 11% 84%;
+    --ring: 220 98% 61%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 235 21% 11%;
+    --foreground: 234 39% 85%;
+    --card: 235 24% 19%;
+    --card-foreground: 234 39% 85%;
+    --popover: 235 24% 19%;
+    --popover-foreground: 234 39% 85%;
+    --primary: 220 98% 61%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 235 24% 19%;
+    --secondary-foreground: 234 39% 85%;
+    --muted: 234 11% 52%;
+    --muted-foreground: 234 11% 52%;
+    --accent: 220 98% 61%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 237 14% 26%;
+    --input: 237 14% 26%;
+    --ring: 220 98% 61%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .card-background {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+  }
+
+  .card-summary {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+  }
+}
+
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0) scale(1.2, 0.8);
+  }
+  15%, 85% {
+    transform: translateY(-20px) scale(1, 1);
+  }
+  50% {
+    transform: translateY(-180px) scale(0.8, 0.8);
+  }
+}
+
+.animate-jump {
+  animation: jump 1s infinite ease-in-out;
+}

@@ -1,0 +1,4 @@
+[*.rell]
+max_line_width=120
+insert_spaces=true
+tab_size=4

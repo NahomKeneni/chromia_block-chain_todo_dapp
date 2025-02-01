@@ -1,0 +1,18 @@
+[*.rell]
+# Check Rell naming convention (true | false)
+rule_naming_convention=true
+
+# Warns about imports from non module files (true | false)
+rule_import_from_non_module=true
+
+# Preferred quote format (double | single)
+rule_quote_format=double
+
+# Rell formatter integration. Detects violations as you type (true | false)
+rule_formatter=true
+
+# Detects variables that could be declared as constants (true | false)
+rule_constant_detection=true
+
+# Warns about declared but unused variables (true | false)
+rule_unused_variable=true
