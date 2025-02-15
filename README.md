@@ -425,7 +425,7 @@ more detail will be found here using the following link form chromia official we
    http://localhost:7740/web_query/<blockchainRid>/web_static  
    ```  
 
-
+  
 
 
 ## Acknowledgements
